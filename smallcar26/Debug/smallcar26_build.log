@@ -1,0 +1,90 @@
+
+**** Clean-only build of configuration 'Debug' for project 'smallcar26' ****
+
+"C:\\TI\\ccs2100\\ccs\\utils\\bin\\gmake" -k -j 24 clean -r -O 
+ 
+DEL /F "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot" "device_linker.cmd" "device.opt" "ti_msp_dl_config.c" "smallcar26.out" 
+DEL /F "axis6.o" "balance.o" "delay.o" "encoder.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "imu.o" "k230_comm.o" "main.o" "motor.o" "oled.o" "pid.o" 
+DEL /F "axis6.d" "balance.d" "delay.d" "encoder.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "imu.d" "k230_comm.d" "main.d" "motor.d" "oled.d" "pid.d" 
+ 
+**** Build finished ****
+
+
+**** Build of configuration 'Debug' for project 'smallcar26' ****
+
+"C:\\TI\\ccs2100\\ccs\\utils\\bin\\gmake" -k -j 24 all -r -O 
+ 
+SysConfig - building file: "../gpio_toggle_output.syscfg"
+"C:/TI/ccs2100/ccs/utils/sysconfig_1.28.0/sysconfig_cli.bat" -s "C:/TI/mspm0_sdk_2_10_00_04/.metadata/product.json" --script "C:/Users/13712/Desktop/diansai1/smallcar26/gpio_toggle_output.syscfg" -o "." --compiler ticlang
+Running script...
+Validating...
+info: /ti/driverlib/SYSCTL: For best practices when the CPUCLK is running at 32MHz and above, clear the flash status bit using DL_FlashCTL_executeClearStatus() before executing any flash operation. Otherwise there may be false positives.
+info: PWM_0(/ti/driverlib/PWM): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+info: TIMER_0(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (gpio_toggle_output.syscfg)...
+Writing C:\Users\13712\Desktop\diansai1\smallcar26\Debug\device_linker.cmd...
+Writing C:\Users\13712\Desktop\diansai1\smallcar26\Debug\device.opt...
+Writing C:\Users\13712\Desktop\diansai1\smallcar26\Debug\device.cmd.genlibs...
+Writing C:\Users\13712\Desktop\diansai1\smallcar26\Debug\ti_msp_dl_config.c...
+Writing C:\Users\13712\Desktop\diansai1\smallcar26\Debug\ti_msp_dl_config.h...
+Writing C:\Users\13712\Desktop\diansai1\smallcar26\Debug\Event.dot...
+Finished building: "../gpio_toggle_output.syscfg"
+ 
+Arm Compiler - building file: "../axis6.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"axis6.d_raw" -MT"axis6.o"  @"./device.opt"  -o"axis6.o" "../axis6.c"
+Finished building: "../axis6.c"
+ 
+Arm Compiler - building file: "../balance.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"balance.d_raw" -MT"balance.o"  @"./device.opt"  -o"balance.o" "../balance.c"
+Finished building: "../balance.c"
+ 
+Arm Compiler - building file: "../delay.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"delay.d_raw" -MT"delay.o"  @"./device.opt"  -o"delay.o" "../delay.c"
+Finished building: "../delay.c"
+ 
+Arm Compiler - building file: "../encoder.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"encoder.d_raw" -MT"encoder.o"  @"./device.opt"  -o"encoder.o" "../encoder.c"
+Finished building: "../encoder.c"
+ 
+Arm Compiler - building file: "ti_msp_dl_config.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Arm Compiler - building file: "C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Arm Compiler - building file: "../i2c_soft.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"i2c_soft.d_raw" -MT"i2c_soft.o"  @"./device.opt"  -o"i2c_soft.o" "../i2c_soft.c"
+Finished building: "../i2c_soft.c"
+ 
+Arm Compiler - building file: "../imu.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"imu.d_raw" -MT"imu.o"  @"./device.opt"  -o"imu.o" "../imu.c"
+Finished building: "../imu.c"
+ 
+Arm Compiler - building file: "../k230_comm.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"k230_comm.d_raw" -MT"k230_comm.o"  @"./device.opt"  -o"k230_comm.o" "../k230_comm.c"
+Finished building: "../k230_comm.c"
+ 
+Arm Compiler - building file: "../main.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"main.d_raw" -MT"main.o"  @"./device.opt"  -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Arm Compiler - building file: "../pid.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"pid.d_raw" -MT"pid.o"  @"./device.opt"  -o"pid.o" "../pid.c"
+Finished building: "../pid.c"
+ 
+Arm Compiler - building file: "../motor.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"motor.d_raw" -MT"motor.o"  @"./device.opt"  -o"motor.o" "../motor.c"
+Finished building: "../motor.c"
+ 
+Arm Compiler - building file: "../oled.c"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/13712/Desktop/diansai1/smallcar26" -I"C:/Users/13712/Desktop/diansai1/smallcar26/Debug" -I"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include" -I"C:/TI/mspm0_sdk_2_10_00_04/source" -gdwarf-3 -MMD -MP -MF"oled.d_raw" -MT"oled.o"  @"./device.opt"  -o"oled.o" "../oled.c"
+Finished building: "../oled.c"
+ 
+Arm Linker - building target: "smallcar26.out"
+"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"smallcar26.map" -Wl,-i"C:/TI/mspm0_sdk_2_10_00_04/source" -Wl,-i"C:/Users/13712/Desktop/diansai1/smallcar26" -Wl,-i"C:/Users/13712/Desktop/diansai1/smallcar26/Debug/syscfg" -Wl,-i"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="smallcar26_linkInfo.xml" -Wl,--rom_model -o "smallcar26.out" "./axis6.o" "./balance.o" "./delay.o" "./encoder.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" "./i2c_soft.o" "./imu.o" "./k230_comm.o" "./main.o" "./motor.o" "./oled.o" "./pid.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "smallcar26.out"
+ 
+**** Build finished ****
+
