@@ -1,0 +1,62 @@
+{
+    "chip_type": "k230",
+    "inference_width": 320,
+    "inference_height": 320,
+    "confidence_threshold": 0.6,
+    "nms_threshold": 0.3,
+    "nncase_version": "2.9.0",
+    "model_type": "AnchorBaseDet",
+    "img_size": [
+        320,
+        320
+    ],
+    "anchors": [
+        [
+            37,
+            62,
+            44,
+            88,
+            52,
+            74
+        ],
+        [
+            57,
+            96,
+            63,
+            106,
+            71,
+            117
+        ],
+        [
+            81,
+            128,
+            107,
+            169,
+            132,
+            204
+        ]
+    ],
+    "mean": [
+        0.485,
+        0.456,
+        0.406
+    ],
+    "std": [
+        0.229,
+        0.224,
+        0.225
+    ],
+    "categories": [
+        "digit_6",
+        "digit_1",
+        "digit_2",
+        "digit_3",
+        "digit_4",
+        "digit_5",
+        "digit_7",
+        "digit_8"
+    ],
+    "nms_option": false,
+    "kmodel_path": "best_AnchorBaseDet_can2_5_s_20260722141453.kmodel",
+    "num_classes": 8
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.log
+
+# Local captures and training data
+detection_dataset/
+raw_images/
+captures/
+datasets/
+
+# Local editor files
+.idea/
+.vscode/
