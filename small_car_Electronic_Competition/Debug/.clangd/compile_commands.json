@@ -1,0 +1,62 @@
+[
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/ADC.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug/ti_msp_dl_config.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/No_Mcu_Ganv_Grayscale_Sensor.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Uart.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/control.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/delay.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/encoder.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/gray_sensor.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/main.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/motor.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/oled.c"
+   },
+   {
+      "directory" : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)\" -I\"C:/Users/13712/Desktop/Electronics competition/small_car (2)/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/TI/ti_cgt_arm_llvm_4.0.2.LTS/include/c\" -xc",
+      "file"      : "C:/Users/13712/Desktop/Electronics competition/small_car (2)/pid.c"
+   }
+]

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//C/TI/ccs2100/ccs/theia/resources/ai/**)",
+      "Read(//C/TI/gcc_arm_none_eabi_9_2_1/**)",
+      "Read(//C/TI/mspm0_sdk_2_10_00_04/**)",
+      "Read(//C/TI/ccs2100/ccs/utils/sysconfig_1.28.0/**)",
+      "Read(//C/TI/sysconfig_1.26.2/**)",
+      "Read(//C/TI/ti_cgt_arm_llvm_4.0.2.LTS/**)"
+    ],
+    "ask": []
+  },
+  "env": {
+    "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "1"
+  }
+}

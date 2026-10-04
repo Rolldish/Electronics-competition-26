@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#343a40"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #343a40; stroke-width: 3; }
+      .wire { fill: none; stroke: #343a40; stroke-width: 3; stroke-linecap: square; stroke-linejoin: miter; marker-end: url(#arrow); }
+      .title { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 32px; font-weight: 600; fill: #2f3438; }
+      .label { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 25px; fill: #343a40; }
+      .small { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 19px; fill: #50565b; }
+      .edge-label { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 18px; fill: #343a40; paint-order: stroke; stroke: #ffffff; stroke-width: 7px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <text x="800" y="50" text-anchor="middle" class="title">车载滚球控制部分电路框图</text>
+
+  <!-- Power -->
+  <rect x="650" y="82" width="310" height="105" class="box"/>
+  <text x="805" y="146" text-anchor="middle" class="label">电源模块</text>
+
+  <!-- Chassis state -->
+  <rect x="70" y="205" width="400" height="150" class="box"/>
+  <text x="270" y="250" text-anchor="middle" class="label">底盘任务状态模块</text>
+  <text x="270" y="292" text-anchor="middle" class="small">MSPM0G3507</text>
+  <text x="270" y="326" text-anchor="middle" class="small">启动 / 加速 / 转弯 / 制动</text>
+
+  <!-- Ball controller -->
+  <rect x="610" y="280" width="410" height="165" class="box"/>
+  <text x="815" y="342" text-anchor="middle" class="label">球杆控制器</text>
+  <text x="815" y="390" text-anchor="middle" class="label">大疆 C 型开发板</text>
+
+  <!-- Vision module -->
+  <rect x="70" y="535" width="400" height="185" class="box"/>
+  <text x="270" y="580" text-anchor="middle" class="label">视觉测量模块</text>
+  <text x="270" y="622" text-anchor="middle" class="small">固定俯视摄像头 + 树莓派 5B</text>
+  <text x="270" y="659" text-anchor="middle" class="small">钢球识别 / 坐标换算 / 速度估计</text>
+  <text x="270" y="695" text-anchor="middle" class="small">输出位置、速度与置信度</text>
+
+  <!-- IMU -->
+  <rect x="655" y="650" width="320" height="125" class="box"/>
+  <text x="815" y="701" text-anchor="middle" class="label">惯性测量模块</text>
+  <text x="815" y="742" text-anchor="middle" class="label">板载 BMI088</text>
+
+  <!-- Actuator -->
+  <rect x="1160" y="265" width="330" height="140" class="box"/>
+  <text x="1325" y="318" text-anchor="middle" class="label">QD4310</text>
+  <text x="1325" y="363" text-anchor="middle" class="label">伺服执行机构</text>
+
+  <!-- Lever and ball -->
+  <rect x="1160" y="570" width="330" height="140" class="box"/>
+  <text x="1325" y="625" text-anchor="middle" class="label">摆杆与钢球</text>
+  <text x="1325" y="669" text-anchor="middle" class="small">滚球平衡被控对象</text>
+
+  <!-- Power distribution -->
+  <path class="wire" d="M805 187 V280"/>
+  <text x="823" y="237" class="edge-label">供电</text>
+  <path class="wire" d="M960 135 H1325 V265"/>
+
+  <!-- Chassis handshake -->
+  <path class="wire" d="M470 305 H610"/>
+  <text x="540" y="289" text-anchor="middle" class="edge-label">任务状态 UART / 握手</text>
+  <path class="wire" d="M610 350 H470"/>
+  <text x="540" y="376" text-anchor="middle" class="edge-label">READY / FAULT</text>
+
+  <!-- Vision data -->
+  <path class="wire" d="M470 622 H540 V402 H610"/>
+  <text x="525" y="546" text-anchor="end" class="edge-label">位置 / 速度 V</text>
+  <text x="525" y="575" text-anchor="end" class="edge-label">置信度（UART）</text>
+
+  <!-- IMU feedback -->
+  <path class="wire" d="M815 650 V445"/>
+  <text x="835" y="555" class="edge-label">纵向加速度反馈</text>
+
+  <!-- CAN command and motor feedback -->
+  <path class="wire" d="M1020 320 H1160"/>
+  <text x="1090" y="304" text-anchor="middle" class="edge-label">CAN命令</text>
+  <path class="wire" d="M1160 378 H1020"/>
+  <text x="1090" y="407" text-anchor="middle" class="edge-label">角度 / 速度 / 电流反馈</text>
+
+  <!-- Actuator drives lever -->
+  <path class="wire" d="M1325 405 V570"/>
+  <text x="1344" y="493" class="edge-label">驱动摆杆</text>
+</svg>
