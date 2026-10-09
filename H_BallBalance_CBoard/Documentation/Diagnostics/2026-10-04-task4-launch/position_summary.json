@@ -1,0 +1,15 @@
+{
+  "early_peak_relative_cm": 5.2654073359400115,
+  "early_peak_video_time_s": 2.0,
+  "min_relative_cm": -6.494472301266755,
+  "min_video_time_s": 8.6,
+  "max_relative_cm": 7.841172569005492,
+  "max_video_time_s": 10.133333333333333,
+  "method": "25 cm pixel proportion; relative to first frame; no Pi nonlinear calibration or verified car-onset time",
+  "manually_rejected_frames": [
+    139,
+    140,
+    141
+  ],
+  "review_note": "First-segment peak and global extrema visually checked; false shadow detections at frames 139-141 omitted from plot."
+}

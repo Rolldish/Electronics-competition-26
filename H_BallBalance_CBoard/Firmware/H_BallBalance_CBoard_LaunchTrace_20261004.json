@@ -1,0 +1,13 @@
+{
+  "BuiltAt": "2026-10-04 17:12:58",
+  "ElfSHA256": "1A77983B109B3129DABFBE76810245CB6D241D3535CE6D8B170C1480DE2DE4DB",
+  "ElfBytes": 2011064,
+  "FlashBytes": 90836,
+  "RAMBytes": 90232,
+  "TraceBytes": 64080,
+  "TraceRecordCount": 1000,
+  "TracePeriodMs": 40,
+  "DiagnosticOnlyChange": true,
+  "HardwareStatus": "Built; not flashed; user will trial",
+  "Instructions": "Documentation/LAUNCH_TRACE_README.md"
+}

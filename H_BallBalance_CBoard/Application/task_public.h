@@ -1,0 +1,218 @@
+#ifndef APPLICATION_TASK_PUBLIC_H
+#define APPLICATION_TASK_PUBLIC_H
+
+#include "cmsis_os2.h"
+
+#include <stdint.h>
+
+/*
+ * FreeRTOS 的 freertos.c 是 C 文件，而任务实现在 C++ 文件中。
+ * extern "C" 用来固定函数名，保证 C 代码能够正确找到这个任务入口。
+ */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// QD4310 控制任务入口，由 Core/Src/freertos.c 创建并启动。
+void BallControlTask_Entry(void *argument);
+void ImuAccelTask_Entry(void *argument);
+void VisionCommTask_Entry(void *argument);
+
+extern osThreadId_t BallControlTaskHandle;
+extern osThreadId_t ImuAccelTaskHandle;
+extern osThreadId_t VisionCommTaskHandle;
+
+extern volatile uint8_t ball_control_debug_state;
+extern volatile uint8_t ball_control_debug_fault;
+extern volatile float ball_control_debug_mechanical_level_rad;
+extern volatile float ball_control_debug_actual_angle_rad;
+extern volatile float ball_control_debug_target_angle_rad;
+extern volatile float ball_control_debug_angle_offset_deg;
+extern volatile int16_t ball_control_debug_target_position_0p1mm;
+extern volatile int16_t ball_control_debug_position_0p1mm;
+extern volatile float ball_control_debug_velocity_mmps;
+extern volatile uint32_t ball_control_debug_valid_measurements;
+extern volatile uint32_t ball_control_debug_measurement_update_count;
+extern volatile uint32_t ball_control_debug_motor_feedback_count;
+extern volatile uint32_t ball_control_debug_tx_error_count;
+extern volatile uint8_t ball_control_debug_motor_enabled;
+extern volatile float ball_control_debug_motor_speed_rpm;
+extern volatile float ball_control_debug_motor_current_a;
+extern volatile float ball_control_debug_peak_abs_motor_speed_rpm;
+extern volatile uint8_t ball_control_debug_fault_snapshot_valid;
+extern volatile float ball_control_debug_fault_motor_speed_rpm;
+extern volatile float ball_control_debug_fault_motor_current_a;
+extern volatile float ball_control_debug_fault_actual_angle_rad;
+extern volatile float ball_control_debug_fault_target_angle_rad;
+extern volatile float ball_control_debug_fault_last_sent_angle_rad;
+extern volatile float ball_control_debug_last_sent_angle_rad;
+extern volatile uint32_t ball_control_debug_enable_confirmations;
+extern volatile uint32_t ball_control_debug_control_elapsed_ms;
+extern volatile uint8_t ball_control_debug_task_id;
+extern volatile uint16_t ball_control_debug_run_id;
+extern volatile float ball_control_tune_kp_deg_per_mm;
+extern volatile float ball_control_tune_kd_deg_per_mmps;
+extern volatile float ball_control_tune_breakaway_angle_deg;
+extern volatile float ball_control_tune_stuck_error_mm;
+extern volatile float ball_control_tune_stuck_speed_mmps;
+extern volatile uint32_t ball_control_tune_stuck_time_ms;
+extern volatile uint32_t ball_control_tune_breakaway_duration_ms;
+extern volatile uint8_t ball_control_debug_stiction_state;
+extern volatile uint32_t ball_control_debug_stuck_elapsed_ms;
+extern volatile float ball_control_debug_active_angle_limit_deg;
+extern volatile uint8_t ball_control_debug_center_hold_active;
+extern volatile uint8_t competition_task_debug_state;
+extern volatile uint8_t competition_task_debug_error;
+extern volatile uint8_t competition_task_debug_context_valid;
+extern volatile uint8_t competition_task_debug_task_id;
+extern volatile uint16_t competition_task_debug_run_id;
+extern volatile int16_t competition_task_debug_target_0p1mm;
+extern volatile uint8_t competition_task_debug_raw_control_flags;
+extern volatile uint8_t competition_task_debug_effective_control_flags;
+extern volatile uint32_t competition_task_debug_reject_count;
+extern volatile uint8_t task3_final_debug_valid;
+extern volatile uint32_t task3_final_debug_capture_count;
+extern volatile uint32_t task3_final_debug_pi_session_id;
+extern volatile uint8_t task3_final_debug_task_id;
+extern volatile uint16_t task3_final_debug_run_id;
+extern volatile uint8_t task3_final_debug_terminal_state;
+extern volatile uint32_t task3_final_debug_vision_status;
+extern volatile int16_t task3_final_debug_target_0p1mm;
+extern volatile uint8_t task3_final_debug_raw_control_flags;
+extern volatile int16_t task3_final_debug_x_0p1mm;
+extern volatile int16_t task3_final_debug_v_mmps;
+extern volatile uint32_t task3_final_debug_measurement_update_count;
+extern volatile uint32_t task3_final_debug_measurement_age_ms;
+extern volatile uint32_t task3_final_debug_accepted_frame_count;
+extern volatile uint32_t task3_final_debug_crc_error_count;
+extern volatile uint32_t task3_final_debug_uart_error_count;
+extern volatile uint8_t task3_final_debug_guard_state;
+extern volatile uint8_t task3_final_debug_guard_error;
+extern volatile uint8_t task3_final_debug_context_valid;
+extern volatile uint8_t task3_final_debug_effective_control_flags;
+extern volatile uint32_t task3_final_debug_reject_count;
+extern volatile uint8_t task3_final_debug_ball_state;
+extern volatile uint8_t task3_final_debug_ball_fault;
+extern volatile int16_t task3_final_debug_ball_target_0p1mm;
+extern volatile int16_t task3_final_debug_ball_position_0p1mm;
+extern volatile float task3_final_debug_ball_velocity_mmps;
+extern volatile uint32_t task3_final_debug_ball_measurement_update_count;
+extern volatile uint8_t task3_final_debug_center_hold_active;
+extern volatile float task3_final_debug_angle_offset_deg;
+extern volatile uint8_t task3_final_debug_motor_enabled;
+extern volatile uint8_t task3_trace_valid_mask;
+extern volatile uint32_t task3_trace_pi_session_id;
+extern volatile uint16_t task3_trace_run_id;
+extern volatile uint8_t task3_trace_sequence[4];
+extern volatile int16_t task3_trace_target_0p1mm[4];
+extern volatile uint8_t task3_trace_control_flags[4];
+extern volatile int16_t task3_trace_x_0p1mm[4];
+extern volatile int16_t task3_trace_v_mmps[4];
+extern volatile uint32_t task3_trace_measurement_update_count[4];
+extern volatile uint32_t task3_trace_measurement_age_ms[4];
+extern volatile uint32_t task3_trace_accepted_frame_count[4];
+extern volatile uint8_t task3_trace_guard_state[4];
+extern volatile uint8_t task3_trace_guard_error[4];
+extern volatile uint8_t task3_trace_effective_control_flags[4];
+extern volatile uint32_t task3_trace_reject_count[4];
+extern volatile uint8_t task3_trace_ball_state[4];
+extern volatile uint8_t task3_trace_ball_fault[4];
+extern volatile int16_t task3_trace_ball_position_0p1mm[4];
+extern volatile float task3_trace_ball_velocity_mmps[4];
+extern volatile uint8_t task3_trace_center_hold_active[4];
+extern volatile float task3_trace_angle_offset_deg[4];
+extern volatile uint8_t task3_trace_motor_enabled[4];
+extern volatile uint8_t ball_control_debug_imu_feedforward_mode;
+extern volatile uint8_t imu_feedforward_debug_configured_enabled;
+extern volatile uint8_t imu_feedforward_debug_ready;
+extern volatile uint8_t imu_feedforward_debug_valid;
+extern volatile float imu_feedforward_debug_accel_mps2;
+extern volatile float imu_feedforward_debug_angle_offset_deg;
+extern volatile float imu_feedforward_debug_target_angle_rad;
+extern volatile uint8_t imu_feedforward_debug_gate_reason;
+extern volatile uint8_t imu_feedforward_debug_sample_fresh;
+extern volatile uint32_t imu_feedforward_debug_sample_age_ms;
+extern volatile float imu_feedforward_debug_pd_offset_deg;
+extern volatile float imu_feedforward_debug_total_offset_deg;
+extern volatile uint32_t imu_feedforward_debug_invalid_cycle_count;
+extern volatile uint32_t imu_feedforward_debug_stale_cycle_count;
+extern volatile uint8_t vehicle_launch_debug_state;
+extern volatile uint8_t vehicle_launch_debug_active;
+extern volatile float vehicle_launch_debug_offset_deg;
+extern volatile uint32_t vehicle_launch_debug_elapsed_ms;
+extern volatile uint32_t vehicle_launch_debug_trigger_count;
+extern volatile uint32_t imu_feedforward_debug_valid_sample_count;
+extern volatile float imu_feedforward_debug_max_accel_mps2;
+extern volatile float imu_feedforward_debug_min_accel_mps2;
+extern volatile float imu_feedforward_debug_max_angle_offset_deg;
+extern volatile float imu_feedforward_debug_min_angle_offset_deg;
+extern volatile float imu_feedforward_debug_min_target_angle_rad;
+extern volatile float imu_feedforward_debug_max_target_angle_rad;
+
+extern volatile float imu_debug_accel_x_mps2;
+extern volatile float imu_debug_accel_y_mps2;
+extern volatile float imu_debug_accel_z_mps2;
+extern volatile float imu_debug_accel_norm_g;
+extern volatile uint32_t imu_debug_sample_count;
+extern volatile uint32_t imu_debug_status;
+extern volatile uint32_t imu_debug_driver_error;
+extern volatile uint32_t imu_debug_dma_error_count;
+extern volatile uint32_t imu_debug_overrun_count;
+extern volatile uint32_t imu_debug_recovery_count;
+extern volatile uint32_t imu_debug_last_transfer_error_source;
+
+extern volatile uint32_t imu_vehicle_status;
+extern volatile uint32_t imu_vehicle_calibrated;
+extern volatile uint32_t imu_vehicle_valid;
+extern volatile uint32_t imu_vehicle_calibration_samples;
+extern volatile uint32_t imu_vehicle_output_count;
+extern volatile float imu_vehicle_baseline_x_mps2;
+extern volatile float imu_vehicle_baseline_y_mps2;
+extern volatile float imu_vehicle_baseline_z_mps2;
+extern volatile float imu_vehicle_noise_mps2;
+extern volatile float imu_vehicle_deadband_mps2;
+extern volatile float imu_vehicle_forward_raw_mps2;
+extern volatile float imu_vehicle_forward_filtered_mps2;
+
+extern volatile uint32_t vision_debug_status;
+extern volatile int32_t vision_debug_x_0p1mm;
+extern volatile int32_t vision_debug_v_mmps;
+extern volatile int32_t vision_debug_target_x_0p1mm;
+extern volatile uint32_t vision_debug_confidence;
+extern volatile uint32_t vision_debug_flags;
+extern volatile uint32_t vision_debug_task_id;
+extern volatile uint32_t vision_debug_control_flags;
+extern volatile uint32_t vision_debug_run_id;
+extern volatile uint32_t vision_debug_measurement_age_ms;
+extern volatile uint32_t vision_debug_measurement_update_count;
+extern volatile uint32_t vision_debug_session_change_count;
+extern volatile uint32_t vision_debug_run_change_count;
+extern volatile uint32_t vision_debug_last_session_id;
+extern volatile uint32_t vision_debug_rx_byte_count;
+extern volatile uint32_t vision_debug_rx_frame_count;
+extern volatile uint32_t vision_debug_accepted_frame_count;
+extern volatile uint32_t vision_debug_valid_measurement_count;
+extern volatile uint32_t vision_debug_crc_error_count;
+extern volatile uint32_t vision_debug_range_error_count;
+extern volatile uint32_t vision_debug_protocol_error_count;
+extern volatile uint32_t vision_debug_timestamp_error_count;
+extern volatile uint32_t vision_debug_sequence_gap_count;
+extern volatile uint32_t vision_debug_duplicate_count;
+extern volatile uint32_t vision_debug_out_of_order_count;
+extern volatile uint32_t vision_debug_timeout_count;
+extern volatile uint32_t vision_debug_discarded_byte_count;
+extern volatile uint32_t vision_debug_parser_overflow_count;
+extern volatile uint32_t vision_debug_dma_overflow_count;
+extern volatile uint32_t vision_debug_uart_error_count;
+extern volatile uint32_t vision_debug_uart_last_error_code;
+extern volatile uint32_t vision_debug_uart_parity_error_count;
+extern volatile uint32_t vision_debug_uart_noise_error_count;
+extern volatile uint32_t vision_debug_uart_frame_error_count;
+extern volatile uint32_t vision_debug_uart_overrun_error_count;
+extern volatile uint32_t vision_debug_uart_dma_error_count;
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* APPLICATION_TASK_PUBLIC_H */
