@@ -17,21 +17,9 @@
 
 ## 系统总体方案
 
-```mermaid
-flowchart LR
-    IR[八路红外循迹传感器] --> G3507[MSPM0G3507<br/>底盘任务主控]
-    ENC[左右轮编码器] --> G3507
-    G3507 --> TB[TB6612FNG<br/>双路电机驱动]
-    TB --> WHEEL[左右驱动轮]
-
-    CAM[固定俯视摄像头] --> RPI[树莓派 5B<br/>识别/坐标换算/速度估计]
-    RPI -->|UART 115200 bit/s| CBOARD[大疆 C 型开发板<br/>STM32F407]
-    G3507 -->|车辆任务状态| CBOARD
-    IMU[BMI088] -->|SPI| CBOARD
-    CBOARD -->|CAN 1 Mbit/s| QD[QD4310 伺服执行机构]
-    QD --> ROD[摆杆与钢球]
-    QD -->|角度/速度/电流反馈| CBOARD
-```
+<p align="center">
+  <img src="./assets/system-architecture.png" width="820" alt="底盘运动控制与球杆平衡控制系统总体方案图" />
+</p>
 
 三个控制平台各自承担最适合的任务：
 
@@ -194,8 +182,16 @@ BMI088 在参与前馈前需要完成六面静态标定、坐标变换、零偏�
 ## 装置照片
 
 <p align="center">
-  <img src="./assets/device.jpg" width="720" alt="华南理工大学 2026 电赛 H 题省一等奖作品装置照片" />
+  <img src="./assets/device-internal.jpg" width="720" alt="车载平衡滚球运动控制系统内部结构与控制模块布局" />
 </p>
+
+<p align="center"><em>装置内部结构与控制模块布局</em></p>
+
+<p align="center">
+  <img src="./assets/device-overview.png" width="720" alt="华南理工大学 2026 电赛 H 题省一等奖作品整机运行状态" />
+</p>
+
+<p align="center"><em>整机运行状态</em></p>
 
 ## 注意事项
 
