@@ -1,0 +1,12 @@
+﻿file,triangles,x_mm,y_mm,z_mm,volume_mm3,watertight,winding_consistent,is_volume,boundary_edges,nonmanifold_edges,duplicate_faces,manifold_status,manifold_volume_mm3,genus,a1mini_180mm_pass,validation_pass
+01_Base_Left.stl,1220,54.0,35.0,38.0,20957.499,True,True,True,0,0,0,Error.NoError,20957.499,6,True,True
+01_Base_Right.stl,1220,54.0,35.0,38.0,20957.499,True,True,True,0,0,0,Error.NoError,20957.499,6,True,True
+02_P20_Lower_Column_Left.stl,1364,117.38,117.38,24.0,24677.159,True,True,True,0,0,0,Error.NoError,24677.159,7,True,True
+02_P20_Lower_Column_Right.stl,1364,117.38,117.38,24.0,24677.159,True,True,True,0,0,0,Error.NoError,24677.159,7,True,True
+03_Splice_Connector_Left.stl,816,30.0,30.0,28.0,8483.52,True,True,True,0,0,0,Error.NoError,8483.52,5,True,True
+03_Splice_Connector_Right.stl,816,30.0,30.0,28.0,8483.52,True,True,True,0,0,0,Error.NoError,8483.52,5,True,True
+04_P21_Upper_Column_Left.stl,852,121.481,121.481,20.0,28139.197,True,True,True,0,0,0,Error.NoError,28139.197,4,True,True
+04_P21_Upper_Column_Right.stl,852,121.481,121.481,20.0,28139.197,True,True,True,0,0,0,Error.NoError,28139.197,4,True,True
+05_P22_Left_Beam_Arm.stl,624,14.0,100.0,18.0,18256.591,True,True,True,0,0,0,Error.NoError,18256.591,3,True,True
+06_P23_Camera_Tray.stl,1218,48.0,68.0,7.0,13103.47,True,True,True,0,0,0,Error.NoError,13103.47,5,True,True
+07_P24_Right_Beam_Arm.stl,620,14.0,100.0,18.0,18256.591,True,True,True,0,0,0,Error.NoError,18256.591,3,True,True
